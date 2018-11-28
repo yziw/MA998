@@ -1,0 +1,29 @@
+#Morris-Lecar model 
+param Iapp=150 
+
+C=20
+gca=4.4
+v3=2
+v4=30
+phi=0.04
+Vk=-84
+VL=-60
+Vca=120
+gk=8
+gL=2
+v1=-1.2
+v2=18
+
+v(0)=-25
+w(0)=0
+
+minf(v)=.5*(1+tanh((v-v1)/v2))
+winf(v)=.5*(1+tanh((v-v3)/v4))
+tau=1/cosh((v-v3)/(2*v4))
+
+dv/dt=(-gca*minf(v)*(v-Vca)-gk*w*(v-Vk)-gL*(v-VL)+Iapp)/C
+dw/dt=phi*(winf(v)-w)/tau
+
+@ xp=t,yp=V,xlo=0,xhi=200,ylo=-75,yhi=75,total=200
+
+done

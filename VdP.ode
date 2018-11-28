@@ -1,0 +1,7 @@
+x''+mu*(x*x-1)*x'+x=0
+
+par mu=1
+
+init x=2
+
+done

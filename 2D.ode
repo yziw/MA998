@@ -1,0 +1,6 @@
+#2D.ode
+x' = a*x + b*y
+y' = c*x + d*y
+par a=0, b=1, c=-1, d=0
+init x=1, y=0
+done

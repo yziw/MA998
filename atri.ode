@@ -1,0 +1,8 @@
+# atri.ode
+
+dc/dt=mu*kf*h*(b+(v1*c)/(k1+c))-gamma*c/(kgamma+c)+beta
+dh/dt=k2*k2/((k2*k2+c*c)*tauh)-h/tauh
+
+par mu, beta=0.02, b=0.111, v1=0.889, gamma=2, tauh=2, k1=0.7, kgamma=0.1, k2=0.7, kf=8.1
+
+done

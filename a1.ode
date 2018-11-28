@@ -1,0 +1,4 @@
+x'=h+r*x-x*x
+par h=1, r=0
+init x=0
+done

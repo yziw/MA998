@@ -1,0 +1,4 @@
+dx/dt=h+mu*x-x^3
+par mu=-2,h=0
+x(0)=1
+done

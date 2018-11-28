@@ -1,0 +1,6 @@
+dx/dt=v
+dv/dt=-omega^2*x
+par omega=1.5
+x(0)=1
+v(0)=2
+done

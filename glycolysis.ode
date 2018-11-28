@@ -1,0 +1,4 @@
+x'=-x+a*y+x^2*y
+y'=b-a*y-x^2*y
+par a=0.1,b=0.5
+done
